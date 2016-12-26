@@ -1,0 +1,37 @@
+<ion-content>
+
+  <div padding [@flyInBottomFast]="cloudState" id="cloud-layer">
+
+    <ion-row>
+      <ion-col>
+        <img [@flyInBottomSlow]="logoState" src="assets/images/joshuamorony.png" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-list inset [@bounceInBottom]="formState">
+
+          <ion-item>
+            <ion-label>Username</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Password</ion-label>
+            <ion-input type="password"></ion-input>
+          </ion-item>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button class="login-button" [@fadeIn]="loginState">Login</button>
+      </ion-col>
+    </ion-row>
+
+  </div>
+
+</ion-content>
